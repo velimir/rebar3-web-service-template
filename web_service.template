@@ -1,0 +1,26 @@
+{description, "Cowboy based web service"}.
+{variables, [
+    {name, "myapp",       "Name of the service"},
+    {desc, "Web service", "Short description of the app"}
+]}.
+
+{template, "template/LICENSE",      "{{name}}/LICENSE"}.
+{template, "template/README.md",    "{{name}}/README.md"}.
+{template, "template/gitignore",    "{{name}}/.gitignore"}.
+{template, "template/erl.config",   "{{name}}/erl.config"}.
+{template, "template/rebar.config", "{{name}}/rebar.config"}.
+
+{template, "template/test/helpers_ct.erl", "{{name}}/test/{{name}}_ct.erl"}.
+{template, "template/test/test_SUITE.erl", "{{name}}/test/{{name}}_SUITE.erl"}.
+{template, "template/test/ct.cover.spec",  "{{name}}/test/ct.cover.spec"}.
+{template, "template/test/ct.test.spec",   "{{name}}/test/ct.test.spec"}.
+
+{template, "template/src/app.src",              "{{name}}/src/{{name}}.app.src"}.
+{template, "template/src/app_mod.erl",          "{{name}}/src/{{name}}.erl"}.
+{template, "template/src/app.erl",              "{{name}}/src/{{name}}_app.erl"}.
+{template, "template/src/context.erl",          "{{name}}/src/{{name}}_context.erl"}.
+{template, "template/src/http.erl",             "{{name}}/src/{{name}}_http.erl"}.
+{template, "template/src/http_log_handler.erl", "{{name}}/src/{{name}}_http_log_handler.erl"}.
+{template, "template/src/log_context_h.erl",    "{{name}}/src/{{name}}_log_context_h.erl"}.
+{template, "template/src/sup.erl",              "{{name}}/src/{{name}}_sup.erl"}.
+{template, "template/src/util.erl",             "{{name}}/src/{{name}}_util.erl"}.
