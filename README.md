@@ -9,14 +9,18 @@ rebar3 template of web service based on cowboy HTTP server.
 
 ## Use
 
-- Clone to rebar3 template directory
+- Make sure rebar3 template directory exists
 
-        $ git clone git@github.com:velimir0xff/rebar3-web-service-template.git ~/.cache/rebar3/lib/rebar/priv/templates/web-service
+        $ mkdir -p ~/.config/rebar3/templates
+
+- Clone repo
+
+        $ git clone git@github.com:velimir0xff/rebar3-web-service-template.git ~/.config/rebar3/templates/web-service
 
     Alternatively template can be symlinked from another directory:
 
         $ git clone git@github.com:velimir0xff/rebar3-web-service-template.git
-        $ ln -s `pwd`/rebar3-web-service-template/  ~/.cache/rebar3/lib/rebar/priv/templates/web_service
+        $ ln -s `pwd`/rebar3-web-service-template/  ~/.config/rebar3/templates/web-service
 
 - List variables available for template
 
