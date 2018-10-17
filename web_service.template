@@ -23,4 +23,5 @@
 {template, "template/src/http_log_handler.erl", "{{name}}/src/{{name}}_http_log_handler.erl"}.
 {template, "template/src/log_context_h.erl",    "{{name}}/src/{{name}}_log_context_h.erl"}.
 {template, "template/src/sup.erl",              "{{name}}/src/{{name}}_sup.erl"}.
+{template, "template/src/srv.erl",              "{{name}}/src/{{name}}_srv.erl"}.
 {template, "template/src/util.erl",             "{{name}}/src/{{name}}_util.erl"}.
